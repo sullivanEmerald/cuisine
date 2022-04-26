@@ -1,0 +1,525 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+
+header{
+    background-color: rgb(235, 235, 235);
+}
+
+header > *, nav > ul, body > header + section, .firstSection, .thirdSection > h4 + h2 + ul,.thirdSection > h4 + h2 + ul + section, .fourth-section span + h2 + img + br + span + section{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 40%;
+    list-style: none;
+    line-height: 4;
+}
+
+header nav section i{
+    padding: 20px;
+    font-size: 25px;
+}
+header > nav >  img{
+   height: 80px;
+}
+
+@media all and (max-width: 768px){
+    header > * {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: flex-start;
+        line-height: normal;
+    
+    }
+
+    nav > ul, nav > ul + section{
+        flex-basis: 100%;
+        line-height: 3;
+
+    }
+
+    header > nav >  img{
+        height: 50px;
+    }
+
+}
+
+
+
+/* FIRST SECTION */
+
+body > header + section{
+    justify-content: space-around;
+    background-color: rgb(235, 235, 235);
+    
+}
+body > header + section section{
+    margin-top: 50px;
+}
+
+body > header + section > section{
+    font-size: 50px;
+    font-weight: bold;
+    flex-basis: 50%;
+    line-height: normal;
+    
+}
+
+body > header + section > section form {
+    position: relative;
+}
+
+body > header + section > section > form > input{
+    width: 50%;
+    height: 30px;
+    padding: 2px 10px;
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+body > header + section > section input + button{
+    text-align: center;
+    height: 30px;
+    width: 20%;
+    position:absolute;
+    top:30px;
+    border: none;
+    background-color: orange;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+body > header + section > section > h1 + form + section img{
+    height: 15px;
+    padding-left: 25px;
+    
+}
+body > header + section > section > h1 + form + section{
+    margin-top: 5px;
+    margin-left: -35px;
+    margin-bottom: 20px;
+}
+
+body > header + section > section > h1 + form + section span{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+/* first section inner second section */
+
+body > header + section > section + section{
+    flex-basis: 20%;
+}
+
+body > header + section > section + section img{
+    height: 350px;
+    border-radius: 20px;
+    
+}
+
+@media all and (max-width: 768px){
+
+    body > header + section{
+        justify-content: flex-start;
+    }
+
+    body > header + section{
+        flex-wrap: wrap-reverse;
+    }
+
+    body > header + section > section input + button{
+        width: 25%;
+    }
+    body > header + section > section + section{
+        margin: 30px auto;
+    }
+
+    body > header + section > section + section img{
+        height: 290px;
+    }
+
+    body > header + section > section{
+        margin: 30px auto;
+    }
+
+    
+
+
+}
+
+
+/* FIRST SECTION */
+
+.firstSection{
+    margin-top: 50px;
+}
+.firstSection > section + section{
+    position: relative;
+    flex-basis: 70%;
+}
+.firstSection > section + section a{
+    color: orange;
+    text-decoration: none;
+}
+
+.firstSection > section + section h2{
+    line-height: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.firstSection > section + section p{
+    line-height: normal;
+    text-align: justify;
+    word-spacing: 2px;
+    font-size: 20px;
+    margin-top:10px ;
+    width: 70%;
+}
+.firstSection > section + section button{
+    text-align: center;
+    height: 30px;
+    width: 15%;
+    border: none;
+    background-color: orange;
+    outline: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+/* second button */
+
+.firstSection > section + section button + span{
+    display: inline-block;
+    background-color: gold;
+    width: 4%;
+    height: 30px;
+    position: absolute;
+    top:68.3%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.firstSection > section + section button + span > i{
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.firstSection > section{
+    flex-basis: 20%;
+}
+.firstSection > section img{
+    height: 300px;
+    margin-right: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.firstSection > section + section img{
+    float: right;
+    border-radius:20%;
+    height: 200px;
+}
+
+@media all and (max-width: 768px){
+    .firstSection{
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .firstSection > section + section a{
+        font-size: 25px;
+        display: inline-block;
+        margin-top: -20px;
+    }
+
+    .firstSection > section + section h2{
+        margin-top: 10px;
+    }
+
+    .firstSection > section + section p{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .firstSection > section + section button{
+        width: 40%;
+        margin: 20px 0;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .firstSection > section + section button + span{
+        width: 10%;
+        top: 91.5%;
+
+    }
+
+    .firstSection > section + section img{
+        display: none;
+    }
+
+    .firstSection > section img{
+       margin: 0 auto;
+       border-radius: 10px;
+    }
+}
+
+
+
+/* Third section */
+
+.thirdSection{
+    background-color:rgb(235, 235, 235) ;
+    text-align: center;
+    margin-top: 20px;
+}
+.thirdSection > h4{
+    padding-top: 20px;
+    font-size: 20px;
+    color:orange;
+}
+
+.thirdSection > h4 + h2{
+    font-size: 60px;
+}
+
+.thirdSection > h4 + h2 + ul{
+    justify-content:center;
+}
+
+.thirdSection > h4 + h2 + ul li {
+    border-bottom: 2px solid black; 
+    padding: 0px 15px;
+}
+
+#firstList{
+     border-bottom: 2px solid orange;
+}
+
+.thirdSection > h4 + h2 + ul li:hover{
+    
+    border-bottom: 2px solid orange;
+
+}
+
+.thirdSection > h4 + h2 + ul + section{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+    
+}
+.thirdSection > h4 + h2 + ul + section img{
+    width: 23%;
+    height: 200px;
+    margin-bottom: 10px;
+    
+}
+.thirdSection .icons {
+
+    margin-bottom: 25px;
+}
+
+.thirdSection .icons span{
+    display: inline-block;
+    border-radius: 50%;
+    height: 7px;
+    background-color: white;
+    width: 7px;
+    margin-left: 5px;
+    
+}
+
+#colored{
+    background-color: orange;
+}
+
+@media all and (max-width: 768px){
+    .thirdSection > h4 + h2 + ul + section{
+        flex-direction: column;
+        width: 80%;
+        margin: 20px auto;
+        
+    }
+    .thirdSection > h4 + h2 + ul + section img{
+        width: 80%;
+        height: 200px;
+        margin: 10px auto;
+        border-radius: 20px;
+        
+    }
+}
+
+.fourth-section{
+    text-align: center;
+    line-height: normal;
+}
+
+.fourth-section > span:first-child{
+    display: inline-block;
+    padding-top: 50px;
+    color: orange;
+    font-size: 20px;
+}
+
+.fourth-section span + h2{
+    font-size: 50px;
+}
+
+.fourth-section span + h2 + img{
+    width:6%;
+    margin-top: 10px;
+        
+}
+
+.fourth-section span + h2 + img + br + span{
+    font-size: 35px;
+    color: orange;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.fourth-section span + h2 + img + br + span + section{
+    justify-content: space-evenly;
+    line-height: normal;
+}
+
+.fourth-section span + h2 + img + br + span + section + img{
+    margin-bottom: 40px;
+}
+
+.fourth-section span + h2 + img + br + span + section strong{
+    font-weight: bolder;
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.fourth-section span + h2 + img + br + span + section span{
+    font-size: 20px;
+}
+
+@media all and (max-width: 768px){
+    .fourth-section span + h2 + img + br + span + section strong{
+        margin-left: 20px;
+    }
+
+    .fourth-section span + h2 + img + br + span + section span{
+        font-size: 20px;
+    }
+
+    .fourth-section span + h2 + img + br + span + section{
+        flex-direction: column;
+    }
+
+    .fourth-section span + h2 + img + br + span + section + img{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .fourth-section{
+        margin-bottom: 20px;
+    }
+}
+
+/* last section */
+
+.lastSection{
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+}
+.lastSection > span:first-child{
+    padding-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    color:orange;
+}
+
+.lastSection > span + h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.lastSection > span + h2 + img{
+    width: 100px;
+    border-radius: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.lastSection > span + h2 + img + span{
+    display:block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lastSection > span + h2 + img + span + span{
+    color: gray;
+    font-style: italic;
+    opacity: 50%;
+    display: block;
+}
+
+.lastSection > span + h2 + img + span + span + section + p{
+    width: 80%;
+    display: inline-block;
+    margin: 10px auto;
+    font-weight: bold;
+    
+}
+
+.lastSection .stars i {
+    color:orange;
+    padding: 15px 5px;
+}
+
+.lastSection section.icons span{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.lastSection section.icons span{
+    display: inline-block;
+    border-radius: 50%;
+    height: 7px;
+    background-color: white;
+    width: 7px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
